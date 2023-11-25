@@ -46,6 +46,8 @@ body{
 .input-wrapper input{
     width: 100%;
     outline-color: aqua;
+    color: black;
+    background-color: white;
 }
 
 .input-wrapper button{

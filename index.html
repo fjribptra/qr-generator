@@ -5,25 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>QR Generator | Fajrieee</title>
 </head>
 <body>
     <div class="loading">
         <h1>Loading ...</h1>
     </div>
-    <div class="container">
-        <h2>QR Code Generator</h1>
-        <p>Enter a url or text to generate qr code</p>
-        <div class="input-wrapper">
-            <input type="text" id="input" placeholder="Enter text or url ...">
-            <button id="generateButton">Generate</button>
+    <nav class="p-5 flex justify-between">
+        <div class="flex items-center gap-5">
+            <i class="text-xl md:text-3xl fa-solid fa-qrcode"></i>
+            <h1 class="text-xl md:text-3xl">QR Generator</h1>
         </div>
-        <img src="">
-        <button id="downloadButton">
-            <p>Download</p>
-            <i class="fa-solid fa-download"></i>
-        </button>
-    </div>
+        <a href="https://github.com/fjribptra/qr-generator" class="p-3 bg-blue-500 text-white flex rounded gap-2 items-center">
+            <i class="fa-brands fa-github"></i>
+            <p class="hidden md:block">Github</p>
+        </a>
+    </nav>
+    <main class="max-w-3xl mx-auto flex flex-col gap-5 p-5">
+        <section class="py-36 flex flex-col gap-5">
+            <h1 class="text-4xl md:text-7xl text-center">Generate a <span class="text-blue-500">QR Code</span></h1>
+            <h2 class="text-center text-slate-500 text-md md:text-3xl">Change text or url into qr code</h2>
+        </section>
+        <div class=" flex flex-col justify-center items-center gap-10">
+            <img src="" class="w-[500px]">
+            <button class="bg-green-500 text-white w-full p-5 flex items-center gap-2 justify-center flex-row-reverse" id="downloadButton">
+                <p>Download</p>
+                <i class="fa-solid fa-download"></i>
+            </button>
+        </div>
+        <div class="container flex flex-col gap-5">
+            <p>Enter a url or text to generate qr code</p>
+            <div class="input-wrapper w-full flex flex-col gap-5">
+                <input class="w-full p-5" type="text" id="input" placeholder="Enter text or url ...">
+                <button class="w-full p-5 bg-blue-500 text-white" id="generateButton">Generate</button>
+            </div>
+           
+        </div>
+    </main>
+    <footer class="p-10">
+        <p class="text-center text-slate-500">&copy; 2024 By <a class="text-blue-500" href="https://fjribptra.github.io">fjribptra</a></p>
+    </footer>
     <script src="js/app.js" type="module"></script>
 </body>
 </html>

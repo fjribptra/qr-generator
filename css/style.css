@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -61,36 +61,11 @@ body{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+*/
 
 #downloadButton{
     display: none;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: .5em 2em;
-    background-color: rgb(12, 230, 12);
-    border: none;
-    cursor: pointer;
-    color: white;
-    transition: .3s all;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    -webkit-transition: .3s all;
-    -moz-transition: .3s all;
-    -ms-transition: .3s all;
-    -o-transition: .3s all;
-}
-
-#downloadButton:hover{
-    transform: scale(110%);
-    -webkit-transform: scale(110%);
-    -moz-transform: scale(110%);
-    -ms-transform: scale(110%);
-    -o-transform: scale(110%);
-}
+} 
 
 .loading{
     position: absolute;
